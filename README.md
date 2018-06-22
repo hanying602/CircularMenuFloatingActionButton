@@ -1,5 +1,7 @@
 # CircularMenuFloatingActionButton
 
+![image](https://github.com/hanying602/CircularMenuFloatingActionButton/blob/master/app/src/main/res/drawable/preview.gif)
+
 ## Getting Started
 
 ### Installation
