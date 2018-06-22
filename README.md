@@ -22,7 +22,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-    implementation 'com.github.hanying602:CircularMenuFloatingActionButton:v1.1'
+    implementation 'com.github.hanying602:CircularMenuFloatingActionButton:v1.2'
 }
 ```
 
