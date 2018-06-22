@@ -26,7 +26,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation project(':library')
+//    implementation project(':library')
+    implementation 'com.github.hanying602:CircularMenuFloatingActionButton:v1.1'
     implementation 'com.android.support:design:27.1.1'
 
 }

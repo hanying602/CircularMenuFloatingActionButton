@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CircularMenuFloatingActionButton mFab = findViewById(R.id.main_activity_mfab);
 
         FloatingActionButton fab1 = new FloatingActionButton(MainActivity.this);
         fab1.setImageResource(android.R.drawable.ic_dialog_dialer);
@@ -65,18 +64,19 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ConstraintLayout mainCLayout = findViewById(R.id.main_activity_layout);
-        mainCLayout.addView(fab1);
-        mainCLayout.addView(fab2);
-        mainCLayout.addView(fab3);
-        mainCLayout.addView(fab4);
-        mainCLayout.addView(fab5);
+        ConstraintLayout rootLayout = findViewById(R.id.main_activity_layout);
+        rootLayout.addView(fab1);
+        rootLayout.addView(fab2);
+        rootLayout.addView(fab3);
+        rootLayout.addView(fab4);
+        rootLayout.addView(fab5);
 
-        mFab.setParentView(mainCLayout);
+        CircularMenuFloatingActionButton mFab = findViewById(R.id.main_activity_mfab);
+        mFab.setParentView(rootLayout);
         mFab.setMenuButtons(fab1,fab2,fab3,fab4,fab5);
-        mFab.setCustomSize(200);
+        mFab.setCustomSize(150);
         mFab.setMenuButtonsSize(100);
-        mFab.setBtnDistance(500);
+        mFab.setBtnDistance(300);
 
     }
 }
